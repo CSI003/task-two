@@ -8,16 +8,10 @@ img {
 	margin: auto;
 }
 
-/* If the viewport width is AT LEAST 1500 pixels wide (viewport width >= 1500px), the image below is displayed */
-@media screen and (min-width: 1500px) {
+/* If the viewport width is AT LEAST 300 pixels wide (viewport width >= 300px), the image below is displayed */
+@media screen and (min-width: 300px) {
 	img {
-		content:url(images/open.gif);
-	}
-}
-
-@media screen and (min-width: 500px) {
-	img {
-		content:url(images/move.gif);
+		content:url(images/close.gif);
 	}
 }
 
@@ -27,8 +21,14 @@ img {
 	}
 }
 
-@media screen and (min-width: 300px) {
+@media screen and (min-width: 500px) {
 	img {
-		content:url(images/close.gif);
+		content:url(images/move.gif);
+	}
+}
+
+@media screen and (min-width: 1500px) {
+	img {
+		content:url(images/open.gif);
 	}
 }
